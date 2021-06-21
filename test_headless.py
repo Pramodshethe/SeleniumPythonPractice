@@ -16,7 +16,7 @@ if browser == "chrome":
     print(driver.title)
     driver.find_element(By.XPATH('//input[@title = ["Search"]')).send_keys('hello')
     driver.back()
-
+#test with firefox
 if browser == "firefox":
     driver = webdriver.Firefox(GeckoDriverManager().install(), options=options)
     driver.implicitly_wait(10)
